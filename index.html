@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Relocart · Lifestyle management, Lausanne</title>
+  <meta name="description" content="Relocart is a Lausanne lifestyle management house. One dedicated Lifestyle Manager for personal assistance, real estate, events, travel, education and the rare things in between." />
+  <meta name="theme-color" content="#ecebe7" />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="preload" href="assets/fonts/switzer-500.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/switzer-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Compact nav, appears after the hero -->
+  <header class="bar" data-bar>
+    <a href="#main" class="bar__logo" aria-label="Relocart, back to top">
+      <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" rx="3.5" transform="rotate(12 16 16)"/><rect x="9" y="9" width="14" height="14" rx="3" transform="rotate(30 16 16)"/></svg>
+      <span>Relocart</span>
+    </a>
+    <nav class="bar__links" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="pill pill--dark pill--sm bar__cta"><span>Book a consultation</span><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <button class="burger burger--dark" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span></button>
+  </header>
+
+  <!-- Fullscreen menu (mobile) -->
+  <div class="menu" id="menu" data-menu>
+    <button class="menu__close" type="button" aria-label="Close menu" data-menu-close><span></span><span></span></button>
+    <nav class="menu__inner" aria-label="Menu">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#memberships">Memberships</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="pill pill--dark pill--block">
+        <span>Book a consultation</span>
+        <span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <p class="menu__foot"><a href="tel:+41768197898">+41 76 819 78 98</a><a href="mailto:info@relocart.ch">info@relocart.ch</a></p>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO (inset card) ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__card">
+        <div class="hero__media" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 47.9375em)" type="image/avif" srcset="assets/img/hero-m-780.avif 780w, assets/img/hero-m-1170.avif 1170w" sizes="100vw" />
+            <source media="(max-width: 47.9375em)" type="image/webp" srcset="assets/img/hero-m-780.webp 780w, assets/img/hero-m-1170.webp 1170w" sizes="100vw" />
+            <source media="(max-width: 47.9375em)" srcset="assets/img/hero-m-780.jpg 780w, assets/img/hero-m-1170.jpg 1170w" sizes="100vw" />
+            <source type="image/avif" srcset="assets/img/hero-1280.avif 1280w, assets/img/hero-1920.avif 1920w, assets/img/hero-2880.avif 2880w, assets/img/hero-3840.avif 3840w" sizes="100vw" />
+            <source type="image/webp" srcset="assets/img/hero-1280.webp 1280w, assets/img/hero-1920.webp 1920w, assets/img/hero-2880.webp 2880w, assets/img/hero-3840.webp 3840w" sizes="100vw" />
+            <img src="assets/img/hero-1920.jpg" srcset="assets/img/hero-1280.jpg 1280w, assets/img/hero-1920.jpg 1920w, assets/img/hero-2880.jpg 2880w, assets/img/hero-3840.jpg 3840w" sizes="100vw" width="3840" height="2178" alt="" fetchpriority="high" decoding="async" />
+          </picture>
+        </div>
+
+        <header class="nav" data-nav>
+          <a href="#main" class="nav__logo" aria-label="Relocart, back to top">
+            <svg class="nav__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="7" width="18" height="18" rx="3.5" transform="rotate(12 16 16)"/><rect x="9" y="9" width="14" height="14" rx="3" transform="rotate(30 16 16)"/></svg>
+            <span>Relocart</span>
+          </a>
+          <nav class="nav__links" aria-label="Primary">
+            <a href="#services">Services</a>
+            <a href="#memberships">Memberships</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a href="#contact" class="pill pill--light nav__cta">
+            <span>Book a consultation</span>
+            <span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </a>
+          <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu" data-burger><span></span><span></span></button>
+        </header>
+
+        <div class="hero__body">
+          <h1 class="hero__title reveal-load" id="hero-title">Life,<br />exquisitely handled.</h1>
+          <ul class="chips" aria-label="Some of what we handle">
+            <li>Personal Assistance</li>
+            <li>Real Estate</li>
+            <li>Events</li>
+            <li>Travel</li>
+            <li>Asset Sourcing</li>
+          </ul>
+        </div>
+
+        <div class="slider" data-slider aria-roledescription="carousel" aria-label="Featured services">
+          <div class="slider__bar" aria-hidden="true"><span class="slider__count" data-count>01</span><i><b data-progress></b></i><span>03</span></div>
+          <div class="slider__track" data-track>
+            <a class="slide" href="#services" data-slide aria-label="Real Estate">
+              <img src="assets/img/goal-left-1.webp" width="674" height="840" alt="" loading="lazy" />
+              <span><b>Real Estate</b><small>Rent, buy or sell, end to end</small></span>
+            </a>
+            <a class="slide" href="#services" data-slide aria-label="Event Management">
+              <img src="assets/img/goal-left-2.webp" width="674" height="840" alt="" loading="lazy" />
+              <span><b>Celebrations</b><small>A table for four to a thousand guests</small></span>
+            </a>
+            <a class="slide" href="#services" data-slide aria-label="Travel and Leisure">
+              <img src="assets/img/goal-right-1.webp" width="674" height="840" alt="" loading="lazy" />
+              <span><b>Travel &amp; Leisure</b><small>Itineraries, flawlessly executed</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="logos" aria-labelledby="logos-title">
+      <div class="wrap logos__inner">
+        <p class="logos__label" id="logos-title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/></svg>
+          In partnership with houses of luxury, art and hospitality.
+        </p>
+        <div class="logos__rail" data-marquee>
+          <ul class="logos__track">
+            <li><img src="assets/partners/cartier.png" alt="Cartier" style="--h:30" width="222" height="64" /></li>
+            <li><img src="assets/partners/aman.png" alt="Aman" style="--h:28" width="240" height="64" /></li>
+            <li><img src="assets/partners/bulgari.png" alt="Bulgari" style="--h:18" width="343" height="39" /></li>
+            <li><img src="assets/partners/brp.png" alt="Beau-Rivage Palace" style="--h:30" width="400" height="108" /></li>
+            <li><img src="assets/partners/loropiana.png" alt="Loro Piana" style="--h:25" width="320" height="68" /></li>
+            <li><img src="assets/partners/vancleef.png" alt="Van Cleef &amp; Arpels" style="--h:36" width="223" height="100" /></li>
+            <li><img src="assets/partners/bucherer.png" alt="Bucherer" style="--h:18" width="386" height="40" /></li>
+            <li><img src="assets/partners/brunello.png" alt="Brunello Cucinelli" style="--h:32" width="355" height="112" /></li>
+            <li><img src="assets/partners/lausanne-palace.png" alt="Lausanne Palace" style="--h:23" width="366" height="64" /></li>
+            <li><img src="assets/partners/belairfineart.png" alt="Bel-Air Fine Art" style="--h:17" width="404" height="40" /></li>
+            <li><img src="assets/partners/dukley.png" alt="Dukley Gardens" style="--h:40" width="160" height="129" /></li>
+            <li><img src="assets/partners/lemanialaw.png" alt="Lemania Law" style="--h:40" width="150" height="120" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="wrap intro__inner">
+        <h2 class="statement reveal" id="intro-title">We take care of everything that fills a life, <span>so you can focus on what truly matters to you.</span></h2>
+        <a href="#process" class="textlink reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          How it works
+        </a>
+      </div>
+
+      <div class="strip" data-strip aria-label="Moments we have arranged">
+        <div class="strip__track" data-strip-track>
+          <figure class="strip__item"><picture><source type="image/avif" srcset="assets/img/goal-left-1.avif" /><img src="assets/img/goal-left-1.webp" width="674" height="840" alt="Modern villa with a pool" loading="lazy" /></picture></figure>
+          <figure class="strip__item"><picture><source type="image/avif" srcset="assets/img/goal-left-2.avif" /><img src="assets/img/goal-left-2.webp" width="674" height="840" alt="Candlelit wedding cake among roses" loading="lazy" /></picture></figure>
+          <figure class="strip__item strip__item--wide"><picture><source type="image/avif" srcset="assets/img/members-1280.avif" /><img src="assets/img/members-1280.webp" width="1280" height="724" alt="Private members' lounge overlooking Lake Geneva at night" loading="lazy" /></picture></figure>
+          <figure class="strip__item"><picture><source type="image/avif" srcset="assets/img/goal-right-1.avif" /><img src="assets/img/goal-right-1.webp" width="674" height="840" alt="Private jet and supercar on the tarmac" loading="lazy" /></picture></figure>
+          <figure class="strip__item"><picture><source type="image/avif" srcset="assets/img/goal-left-3.avif" /><img src="assets/img/goal-left-3.webp" width="674" height="840" alt="Concert stage lit with pyrotechnics" loading="lazy" /></picture></figure>
+          <figure class="strip__item"><picture><source type="image/avif" srcset="assets/img/goal-right-3.avif" /><img src="assets/img/goal-right-3.webp" width="674" height="840" alt="Supercar on a race track" loading="lazy" /></picture></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="numbers" aria-label="Relocart in numbers">
+      <dl class="wrap numbers__grid">
+        <div class="reveal"><dt>Availability</dt><dd><span data-count-to="24">24</span>/7</dd><p>Your Lifestyle Manager around the clock with a Signature membership.</p></div>
+        <div class="reveal" style="--d:.06s"><dt>Disciplines</dt><dd><span data-count-to="10">10</span></dd><p>From paperwork to private jets, handled by one trusted advisor.</p></div>
+        <div class="reveal" style="--d:.12s"><dt>Guests</dt><dd><span data-count-to="1000" data-format="comma">1,000</span></dd><p>An intimate dinner for four, or a wedding for a thousand.</p></div>
+        <div class="reveal" style="--d:.18s"><dt>Memberships</dt><dd><span data-count-to="4">4</span></dd><p>Four tiers, or one composed entirely around you.</p></div>
+      </dl>
+    </section>
+
+    <!-- ============ SERVICES (dark panel) ============ -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services__card">
+        <div class="wrap">
+          <div class="services__head">
+            <h2 class="display reveal" id="services-title">Ten disciplines,<br /><span>one trusted advisor.</span></h2>
+            <p class="reveal">A truly personal, human-to-human service. Your dedicated Lifestyle Manager anticipates, arranges and handles the details, so every day runs effortlessly.</p>
+          </div>
+
+          <div class="services__grid">
+            <ol class="svc" data-svc>
+              <li><button type="button" class="svc__row" data-img="assets/img/hero-1280.webp" aria-expanded="true" aria-controls="s1"><span class="svc__n">01</span><span class="svc__name">Personal Assistance</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s1"><p>A Lifestyle Manager with an in-depth understanding of your preferences, curating travel, arranging access and handling complex details.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-left-1.webp" aria-expanded="false" aria-controls="s2"><span class="svc__n">02</span><span class="svc__name">Real Estate</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s2"><p>Rent, buy or sell, from first search to final paperwork, with an extensive network and expert market insight.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/members-1280.webp" aria-expanded="false" aria-controls="s3"><span class="svc__n">03</span><span class="svc__name">Administrative Support</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s3"><p>Doctors, lawyers, insurers and accountants, appointments and day-to-day tasks. Everything runs smoothly.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-right-2.webp" aria-expanded="false" aria-controls="s4"><span class="svc__n">04</span><span class="svc__name">Education</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s4"><p>The right school, programme or private tuition for your children, chosen with expert insight.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/hero-1280.webp" aria-expanded="false" aria-controls="s5"><span class="svc__n">05</span><span class="svc__name">Staff Recruitment</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s5"><p>Housekeepers, private chefs and nannies, carefully screened and placed through our trusted recruitment partner.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-left-2.webp" aria-expanded="false" aria-controls="s6"><span class="svc__n">06</span><span class="svc__name">Event Management</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s6"><p>Venue, catering, entertainment and décor for a dinner for four or a wedding for a thousand.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-left-3.webp" aria-expanded="false" aria-controls="s7"><span class="svc__n">07</span><span class="svc__name">Exceptional Experiences</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s7"><p>Private exhibitions, in-demand concerts, intimate dining events. Tickets and transport, arranged.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/members-1280.webp" aria-expanded="false" aria-controls="s8"><span class="svc__n">08</span><span class="svc__name">Fine Dining &amp; Nightlife</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s8"><p>A favourite table or the city's most vibrant venue, from the reservation to the last glass.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-right-1.webp" aria-expanded="false" aria-controls="s9"><span class="svc__n">09</span><span class="svc__name">Travel &amp; Leisure</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s9"><p>Seamless itineraries, exclusive accommodation and hard-to-get reservations, flawlessly executed.</p></div></li>
+              <li><button type="button" class="svc__row" data-img="assets/img/goal-right-3.webp" aria-expanded="false" aria-controls="s10"><span class="svc__n">10</span><span class="svc__name">Asset Sourcing</span><span class="svc__plus" aria-hidden="true"></span></button>
+                <div class="svc__body" id="s10"><p>Designer handbags, high-performance cars, helicopters and yachts, sourced and delivered end to end.</p></div></li>
+            </ol>
+
+            <figure class="services__view" aria-hidden="true">
+              <img src="assets/img/hero-1280.webp" alt="" data-view-a />
+              <img src="assets/img/hero-1280.webp" alt="" data-view-b />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <h2 class="display reveal" id="process-title">One person who knows<br /><span>how you like things done.</span></h2>
+        <ol class="process__grid">
+          <li class="reveal"><span class="process__n">01</span><h3>A private conversation</h3><p>We take the time to understand your rhythm, your preferences and the details you'd rather never think about again.</p></li>
+          <li class="reveal" style="--d:.06s"><span class="process__n">02</span><h3>Your membership, composed</h3><p>Choose a tier, or have one designed around you. From relocation to daily assistance.</p></li>
+          <li class="reveal" style="--d:.12s"><span class="process__n">03</span><h3>One trusted contact</h3><p>Your Lifestyle Manager and our network of elite providers deliver with precision and discretion.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ MEMBERSHIPS ============ -->
+    <section class="members" id="memberships" aria-labelledby="members-title">
+      <div class="wrap">
+        <div class="members__head">
+          <h2 class="display reveal" id="members-title">Memberships,<br /><span>composed around you.</span></h2>
+          <p class="reveal">Tailored in a private consultation, with no obligation. A task is a single request handled end to end, such as a reservation, an appointment or a booking.</p>
+        </div>
+
+        <ul class="tiers">
+          <li class="tier reveal">
+            <div class="tier__name"><h3>First Impressions</h3><p>A first taste of lifestyle management.</p></div>
+            <dl class="tier__specs"><div><dt>Duration</dt><dd>3 months</dd></div><div><dt>Tasks</dt><dd>15 in total</dd></div><div><dt>Hours</dt><dd>9–18</dd></div></dl>
+            <p class="tier__incl">Travel &amp; Leisure · Fine Dining &amp; Nightlife · Exceptional Experiences</p>
+            <a href="#contact" class="pill pill--outline" data-tier="First Impressions"><span>Enquire</span><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span><span class="sr-only"> about First Impressions</span></a>
+          </li>
+          <li class="tier reveal">
+            <div class="tier__name"><h3>Essentials</h3><p>Year-round support for the essentials.</p></div>
+            <dl class="tier__specs"><div><dt>Duration</dt><dd>12 months</dd></div><div><dt>Tasks</dt><dd>10 / month</dd></div><div><dt>Hours</dt><dd>9–18</dd></div></dl>
+            <p class="tier__incl">Everything in First Impressions, plus Asset Sourcing</p>
+            <a href="#contact" class="pill pill--outline" data-tier="Essentials"><span>Enquire</span><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span><span class="sr-only"> about Essentials</span></a>
+          </li>
+          <li class="tier tier--signature reveal">
+            <div class="tier__name"><h3>Signature <em>Unlimited · 24/7</em></h3><p>Your Lifestyle Manager, around the clock.</p></div>
+            <dl class="tier__specs"><div><dt>Duration</dt><dd>12 months</dd></div><div><dt>Tasks</dt><dd>Unlimited</dd></div><div><dt>Hours</dt><dd>24/7</dd></div></dl>
+            <p class="tier__incl">Everything in Essentials, plus Personal Assistance, Event Management and Administrative Support</p>
+            <a href="#contact" class="pill pill--light" data-tier="Signature"><span>Enquire</span><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span><span class="sr-only"> about Signature</span></a>
+          </li>
+          <li class="tier reveal">
+            <div class="tier__name"><h3>Legacy</h3><p>Every discipline, for the whole household.</p></div>
+            <dl class="tier__specs"><div><dt>Duration</dt><dd>12 months</dd></div><div><dt>Tasks</dt><dd>Unlimited</dd></div><div><dt>Hours</dt><dd>24/7</dd></div></dl>
+            <p class="tier__incl">Everything in Signature, plus Staff Recruitment, Education, Real Estate and Banking Solutions</p>
+            <a href="#contact" class="pill pill--outline" data-tier="Legacy"><span>Enquire</span><span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span><span class="sr-only"> about Legacy</span></a>
+          </li>
+        </ul>
+        <a href="#contact" class="bespoke reveal" data-tier="Bespoke">Something entirely your own? <span>Compose a bespoke membership</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE BAND ============ -->
+    <section class="band" aria-label="Our promise">
+      <div class="band__card">
+        <picture>
+          <source type="image/avif" srcset="assets/img/cta-1280.avif 1280w, assets/img/cta-2048.avif 2048w, assets/img/cta-2688.avif 2688w" sizes="100vw" />
+          <source type="image/webp" srcset="assets/img/cta-1280.webp 1280w, assets/img/cta-2048.webp 2048w, assets/img/cta-2688.webp 2688w" sizes="100vw" />
+          <img src="assets/img/cta-2048.jpg" width="2688" height="1520" alt="A classic wooden motor yacht on Lake Geneva at dusk" loading="lazy" data-band-img />
+        </picture>
+        <div class="band__copy">
+          <p class="band__text reveal">With Relocart, you're not just being served. You're being understood, valued and supported by experts.</p>
+          <ul class="band__values reveal" aria-label="Our values">
+            <li>Worldwide presence</li>
+            <li>Tailored support system</li>
+            <li>Discretion, trust, commitment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div class="contact__text">
+          <h2 class="display reveal" id="contact-title">Begin with<br /><span>a conversation.</span></h2>
+          <ol class="steps reveal" aria-label="What happens next">
+            <li><span>01</span>Tell us a little about you, in complete confidence.</li>
+            <li><span>02</span>A Lifestyle Manager gets in touch personally, at a time that suits you.</li>
+            <li><span>03</span>We propose a membership tailored to you. No obligation.</li>
+          </ol>
+          <dl class="direct reveal">
+            <div><dt>Call</dt><dd><a href="tel:+41768197898">+41 76 819 78 98</a></dd></div>
+            <div><dt>Write</dt><dd><a href="mailto:info@relocart.ch">info@relocart.ch</a></dd></div>
+            <div><dt>Visit</dt><dd>Chemin de Beau-Rivage 21A, 1006 Lausanne</dd></div>
+          </dl>
+        </div>
+
+        <form class="form reveal" data-form action="mailto:info@relocart.ch" method="post" enctype="text/plain" novalidate>
+          <h3 class="form__title">Request a private consultation</h3>
+          <p class="form__req">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
+          <div class="field">
+            <label for="f-name">Name <span aria-hidden="true">*</span></label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" aria-describedby="f-name-err" />
+            <p class="field__err" id="f-name-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email <span aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" aria-describedby="f-email-err" />
+            <p class="field__err" id="f-email-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone <small>(optional)</small></label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <fieldset class="opts">
+            <legend>Membership of interest</legend>
+            <label><input type="radio" name="tier" value="Not sure yet" checked /><span>Not sure yet</span></label>
+            <label><input type="radio" name="tier" value="First Impressions" /><span>First Impressions</span></label>
+            <label><input type="radio" name="tier" value="Essentials" /><span>Essentials</span></label>
+            <label><input type="radio" name="tier" value="Signature" /><span>Signature</span></label>
+            <label><input type="radio" name="tier" value="Legacy" /><span>Legacy</span></label>
+            <label><input type="radio" name="tier" value="Bespoke" /><span>Bespoke</span></label>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">How can we help?</label>
+            <textarea id="f-msg" name="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="pill pill--dark pill--block" data-submit>
+            <span data-submit-label>Send request</span>
+            <span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+          </button>
+          <p class="form__note" role="status" aria-live="polite" data-status>Treated in the strictest confidence. See our <a href="https://relocart.ch/policy/privacy" target="_blank" rel="noopener">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__card">
+      <div class="wrap">
+        <div class="footer__top">
+          <p class="footer__claim">Life, exquisitely handled.</p>
+          <nav class="footer__col" aria-label="Footer">
+            <a href="#services">Services</a><a href="#memberships">Memberships</a><a href="#about">About</a><a href="#contact">Contact</a>
+          </nav>
+          <div class="footer__col">
+            <a href="tel:+41768197898">+41 76 819 78 98</a>
+            <a href="mailto:info@relocart.ch">info@relocart.ch</a>
+            <a href="https://www.instagram.com/relocart" target="_blank" rel="noopener">Instagram<span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+          <address class="footer__col">Chemin de Beau-Rivage 21A<br />1006 Lausanne<br />Switzerland</address>
+        </div>
+        <p class="footer__mark" aria-hidden="true">Relocart</p>
+        <div class="footer__legal">
+          <span>© <span data-year>2026</span> Relocart · CHE-112.135.854</span>
+          <nav aria-label="Legal">
+            <a href="https://relocart.ch/policy/impressum" target="_blank" rel="noopener">Impressum</a>
+            <a href="https://relocart.ch/policy/terms-of-use" target="_blank" rel="noopener">Terms</a>
+            <a href="https://relocart.ch/policy/privacy" target="_blank" rel="noopener">Privacy</a>
+            <a href="https://relocart.ch/policy/cookies" target="_blank" rel="noopener">Cookies</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contact" class="dock" data-dock>
+    <span>Book a consultation</span>
+    <span class="pill__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+  </a>
+
+  <script src="assets/js/vendor/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
